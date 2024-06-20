@@ -1,0 +1,56 @@
+@import url(/css/style.css); 
+
+.subjects-content{
+    width: 100%;
+}
+
+.subjects-table {
+    margin: 8rem 2rem;
+}
+
+.subjects-table table{
+    text-align: center;
+    border: 1rem  solid;
+    border-bottom: 1.3rem  solid;
+    border-color: #5B86CB;
+    border-radius: 2rem;
+    border-collapse: separate;
+    border-spacing: 0; 
+    margin-top: 2.5rem;
+}
+
+.subjects-table h1 {
+    color: #5B86CB;
+    text-align: center;
+}
+
+.subjects-table th {
+    text-align: center;
+}
+
+table .semester-title{
+    font-weight: 900;
+
+}
+
+.c1 {
+    border-right: 2px solid #5B86CB;
+}
+
+.subjects-table td {
+    text-align: center;
+    height: 60px; 
+    font-size: 1.1em;
+    font-weight: 600;
+    width:50%;
+}
+
+.subjects-table a{
+    text-decoration: none;
+    text-align: center;
+    height: 60px; 
+    font-size: 1em;
+    font-weight: 500;
+    width:50%;
+    color: #272228;
+}

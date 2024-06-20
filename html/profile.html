@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Profile</title>
+    <link href="../css/profile.css" rel="stylesheet" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
+</head>
+<body>
+  
+      <!-- Retângulo -->
+      <div class="retangulo"></div>
+
+      <!-- Imagem de fundo e logo -->
+      <div class="img_shape">
+          <a href="../index.html">
+              <img src="../img/shape.png" alt="image background" class="img-fluid"/>
+              <img src="../img/logo.svg" alt="logo" class="logo"/>
+          </a>
+      </div>
+  
+    <!-- Sidebar Button -->
+    <button class="menu-toggle btn" id="menu-toggle" style="right: 0; background-color: #272228; color: #FEFFFA; font-size: 2rem;">≡</button>
+    <!-- Sidebar -->
+    <div class="wrapper" id="wrapper">
+      <aside class="sidebar-wrapper" id="sidebar-wrapper"  >
+          <a href="../html/signUp.html" class="login-link">
+            <div class="login d-flex">
+              <div class="login-text">Login / Register</div>
+              <img src="../img/profile-pic.svg" class="profile_pic" alt="Profile Picture"> 
+            </div>
+          </a>
+          <div class="sidebar-links">
+            <ul class="sidebar-nav text-center h-100 col-4">
+              <li class="sidebar-item">
+                <a class="sidebar-link" href="../html/about.html">About</a>
+              </li>
+              <li class="sidebar-item">
+                <a class="sidebar-link" href="../html/escapeRoom.html">Escape Room</a>
+              </li>
+              <li class="sidebar-item">
+                <a class="sidebar-link" href="../html/subjects.html">Subjects</a>
+              </li>
+              <li class="sidebar-item">
+                <a class="sidebar-link" href="../html/alumni.html">Alumni</a>
+              </li>
+            </ul>
+          </div>
+          <div class="achivements">
+            <h2 class="achivements_title text-center">Achievements</h2>
+            <ul>
+              <li>Escape Room</li>
+              <hr class="line">
+              <li>Quiz</li>
+              <hr class="line">
+              <li>Profile</li>
+              <hr class="line">
+            </ul>
+          </div>
+          <div class="escape_room">
+            <h1 class="escape_room_title">START YOUR<br> JOURNEY HERE </h1>
+            <a href="../html/escapeRoom" class="escape_room_btn d-flex">
+              <h2 class="escape_room_btn_name">Escape Room</h2>
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" style="margin-left: 12rem;" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-arrow-right"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+            </a>
+          </div>
+                  <!-- Footer Section -->
+          <footer class="footer text-light py-4">
+            <div class="container text-center">
+              <div class="row">
+                <div class="col-md-6 mb-3 d-flex flex-column align-items-center justify-content-center" style="margin-top: -3.5rem;">
+                  <img src="../img/pporto.svg" alt="Institute Logo" class="footer-logo-pporto mb-2" style=" transform: rotate(90deg); ">
+                  <img src="../img/esmadLogo.svg" alt="Faculty Logo" class="footer-logo-esmad" style="margin-top: -2.5rem; margin-left: -1.5rem;">
+                </div>
+                <div class="col-md-6 mb-3 d-flex flex-wrap justify-content-center align-items-center">
+                  <a href="https://www.facebook.com/pporto.esmad/" class="social-icon-link"><img src="../img/faceLogo.svg" alt="Facebook" class="social-icon facebook"></a>
+                  <a href="https://x.com/pporto_esmad" class="social-icon-link"><img src="../img/twitterLogo.svg" alt="Twitter" class="social-icon twitter"></a>
+                  <a href="https://www.instagram.com/esmad_pporto" class="social-icon-link"><img src="../img/instagramLogo.svg" alt="Instagram" class="social-icon instagram"></a>
+                  <a href="https://www.linkedin.com/company/pportoesmad/" class="social-icon-link"><img src="../img/linkedinLogo.svg" alt="LinkedIn" class="social-icon linkedin"></a>
+                  <a href="https://www.youtube.com/channel/UCARMgrCS_Fs33og7h3_bsIQ" class="social-icon-link"><img src="../img/youtubeLogo.svg" alt="YouTube" class="social-icon youtube"></a>
+                  <a href="https://issuu.com/esmad_pporto" class="social-icon-link"><img src="../img/issuuLogo.svg" alt="GitHub" class="social-icon github"></a>
+                </div>
+              </div>
+            </div>
+          </footer>
+      </aside>
+  
+      <!-- Page Content  -->
+      <section id="content-wrapper" class="content-wrapper container">
+        <div class="row">
+          <div class="col-lg-12" style="margin-top: 10rem;">
+            <!-- Profile Card -->
+            <div class="container profile-section" style="margin-left: 1rem;">
+              <div class="profile-card row align-items-center">
+                <div class="col-4 col-md-2 text-center">
+                  <img src="../img/profile-pic.svg" alt="Profile Picture" class="profile-img img-fluid" >
+                </div>
+                <div class="col-8 col-md-10">
+                  <h2>John Doe</h2>
+                  <p>JohnDoe@esmad.ipp.pt</p>
+                </div>
+              </div>
+            </div>
+    
+            <!-- Settings Card -->
+            <div class="container settings-options mt-5" id="container">
+              <div class="container-custom">
+                  <div class="row row-cols-1 g-4">
+                        <div class="col">
+                          <!-- Account Settings -->
+                          <div class="card card-custom">
+                              <div class="card-body">
+                                  <img src="../img/settings-icon.svg" alt="Settings Icon" class="me-3" style="width: 3rem; height: 3rem;">
+                                  <h5 class="card-title">Account Settings</h5>
+                              </div>
+                              <div class="card-info content" style="display:none;">
+                                  <div class="input-group mb-3">
+                                      <span class="input-group-text" id="change-username-label">Change Username:</span>
+                                      <input type="text" class="form-control username-input" style="border-radius: 20rem;" aria-label="Username" aria-describedby="change-username-label">
+                                  </div>
+                                  <div class="input-group mb-3">
+                                      <span class="input-group-text" id="change-password-label">Change Password:</span>
+                                      <input type="password" class="form-control password-input" style="border-radius: 20rem;" aria-label="Password" aria-describedby="change-password-label">
+                                  </div>
+                                  <button class="btn ok-button">Save</button>
+                              </div>
+                          </div>
+                        </div>  
+                        <!-- Verify Yourself As Alumni -->
+                        <div class="col">
+                          <div class="card card-custom">
+                              <div class="card-body">
+                                  <img src="../img/verify-icon.svg" alt="Verify Icon" class="me-3" style="width: 3rem; height: 3rem;">
+                                  <h5 class="card-title">Verify Yourself as Alumni</h5>
+                              </div>
+                              <div class="card-info content" style="display:none;">
+                                  <div class="input-group mb-3">
+                                      <span class="input-group-text" id="porto-number-label">Your Porto Number:</span>
+                                      <input type="text" class="form-control porto-number-input" style="border-radius: 20rem;" aria-label="Porto Number" aria-describedby="porto-number-label">
+                                  </div>
+                                  <div class="input-group mb-3">
+                                      <span class="input-group-text" id="name-label">First and Last Name:</span>
+                                      <input type="text" class="form-control name-input" style="border-radius: 20rem;" aria-label="Name" aria-describedby="name-label">
+                                  </div>
+                                  <div class="input-group mb-3">
+                                      <span class="input-group-text" id="screenshot-label">Schedule Screenshot:</span>
+                                      <input type="file" class="form-control screenshot-input" style="border-radius: 20rem;" aria-label="Schedule Screenshot" aria-describedby="screenshot-label">
+                                  </div>
+                                  <button class="btn btn-primary ok-button">Save</button>
+                              </div>
+                          </div>
+                        </div>
+                        <!-- Contact Support -->
+                        <div class="col">
+                          <div class="card card-custom">
+                              <div class="card-body">
+                                  <img src="../img/message-icon.svg" alt="Message/Contact Icon" class="me-3" style="width: 3rem; height: 3rem;">
+                                  <h5 class="card-title">Contact Support</h5>
+                              </div>
+                              <div class="card-info content" style="display:none;">
+                                  <!-- Contact support text and form -->
+                                  <div class="contact-support-form px-4 py-3">
+                                      <p>If you have any questions or need assistance, please feel free to reach out to our support team using the form below:</p>
+                                      <form>
+                                          <div class="mb-3">
+                                              <label for="message" class="form-label">Message:</label>
+                                              <textarea class="form-control" id="message" rows="4" placeholder="Enter your message"></textarea>
+                                          </div>
+                                          <button class="btn btn-primary ok-button">Send</button>     
+                                      </form>
+                                  </div>               
+                              </div>
+                          </div>
+                        </div>
+
+                          <!-- Share Our Page -->
+                          <div class="col">
+                            <div class="card card-custom">
+                                <div class="card-body">
+                                    <img src="../img/share-icon.svg" alt="Share Icon" class="me-3" style="width: 3rem; height: 3rem;">
+                                    <h5 class="card-title">Share Our Page</h5>
+                                </div>
+                                <div class="card-info" style="display:none;">
+                                    <!-- Texto e ícones de compartilhamento -->
+                                    <div class="share-section text-center py-3">
+                                        <p>Share Our Page on:</p>
+                                        <div class="share-icons d-flex justify-content-center">
+                                            <a href="#" class="social-icon-link me-3"><img src="../img/faceLogo.svg" alt="Facebook" class="social-icon" ></a>
+                                            <a href="#" class="social-icon-link me-3"><img src="../img/twitterLogo.svg" alt="Twitter" class="social-icon"></a>
+                                            <a href="#" class="social-icon-link me-3"><img src="../img/instagramLogo.svg" alt="Instagram" class="social-icon"></a>
+                                            <a href="#" class="social-icon-link"><img src="../img/linkedinLogo.svg" alt="LinkedIn" class="social-icon"></a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                          </div>
+                  </div>
+              </div>
+          </div>
+        </div>
+      </section>
+
+
+
+      <script src="../js/profile.js"></script>
+      <script type="module" src="../js/views/SideBarView.js"></script>
+	    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+		    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous">
+	    </script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous">
+      </script>
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+</body>
+</html>

@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Escape Room</title>
+    <link href="../css/escapeRoom.css" rel="stylesheet" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous"/>
+</head>
+<body>
+
+     <!-- Retângulo -->
+     <div class="retangulo"></div>
+
+     <!-- Imagem de fundo e logo -->
+     <div class="img_shape">
+         <a href="../index.html">
+             <img src="../img/shape.png" alt="image background" class="img-fluid"/>
+             <img src="../img/logo.svg" alt="logo" class="logo"/>
+         </a>
+     </div>
+ 
+   <!-- Sidebar Button -->
+   <button class="menu-toggle btn" id="menu-toggle" style="right: 0; background-color: #272228; color: #FEFFFA; font-size: 2rem;">≡</button>
+   <!-- Sidebar -->
+   <div class="wrapper" id="wrapper">
+     <aside class="sidebar-wrapper" id="sidebar-wrapper"  >
+         <a href="../html/signUp.html" class="login-link">
+           <div class="login d-flex">
+             <div class="login-text">Login / Register</div>
+             <img src="../img/profile-pic.svg" class="profile_pic" alt="Profile Picture"> 
+           </div>
+         </a>
+         <div class="sidebar-links">
+           <ul class="sidebar-nav text-center h-100 col-4">
+             <li class="sidebar-item">
+               <a class="sidebar-link" href="../html/about.html">About</a>
+             </li>
+             <li class="sidebar-item">
+               <a class="sidebar-link" href="../html/escapeRoom.html">Escape Room</a>
+             </li>
+             <li class="sidebar-item">
+               <a class="sidebar-link" href="../html/subjects.html">Subjects</a>
+             </li>
+             <li class="sidebar-item">
+               <a class="sidebar-link" href="../html/alumni.html">Alumni</a>
+             </li>
+           </ul>
+         </div>
+         <div class="achivements">
+           <h2 class="achivements_title text-center">Achievements</h2>
+           <ul>
+             <li>Escape Room</li>
+             <hr class="line">
+             <li>Quiz</li>
+             <hr class="line">
+             <li>Profile</li>
+             <hr class="line">
+           </ul>
+         </div>
+         <div class="escape_room">
+           <h1 class="escape_room_title">START YOUR<br> JOURNEY HERE </h1>
+           <a href="../html/escapeRoom.html" class="escape_room_btn d-flex">
+             <h2 class="escape_room_btn_name">Escape Room</h2>
+             <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" style="margin-left: 12rem;" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-arrow-right"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+           </a>
+         </div>
+                 <!-- Footer Section -->
+         <footer class="footer text-light py-4">
+           <div class="container text-center">
+             <div class="row">
+               <div class="col-md-6 mb-3 d-flex flex-column align-items-center justify-content-center" style="margin-top: -3.5rem;">
+                 <img src="../img/pporto.svg" alt="Institute Logo" class="footer-logo-pporto mb-2" style=" transform: rotate(90deg); ">
+                 <img src="../img/esmadLogo.svg" alt="Faculty Logo" class="footer-logo-esmad" style="margin-top: -2.5rem; margin-left: -1.5rem;">
+               </div>
+               <div class="col-md-6 mb-3 d-flex flex-wrap justify-content-center align-items-center">
+                 <a href="https://www.facebook.com/pporto.esmad/" class="social-icon-link"><img src="../img/faceLogo.svg" alt="Facebook" class="social-icon facebook"></a>
+                 <a href="https://x.com/pporto_esmad" class="social-icon-link"><img src="../img/twitterLogo.svg" alt="Twitter" class="social-icon twitter"></a>
+                 <a href="https://www.instagram.com/esmad_pporto" class="social-icon-link"><img src="../img/instagramLogo.svg" alt="Instagram" class="social-icon instagram"></a>
+                 <a href="https://www.linkedin.com/company/pportoesmad/" class="social-icon-link"><img src="../img/linkedinLogo.svg" alt="LinkedIn" class="social-icon linkedin"></a>
+                 <a href="https://www.youtube.com/channel/UCARMgrCS_Fs33og7h3_bsIQ" class="social-icon-link"><img src="../img/youtubeLogo.svg" alt="YouTube" class="social-icon youtube"></a>
+                 <a href="https://issuu.com/esmad_pporto" class="social-icon-link"><img src="../img/issuuLogo.svg" alt="GitHub" class="social-icon github"></a>
+               </div>
+             </div>
+           </div>
+         </footer>
+     </aside>
+     
+ 
+     <!-- Page Content  -->
+     <section id="content-wrapper" class="content-wrapper container">
+       <div class="row">
+         <div class="col-lg-12">
+            <div class="escaperoom_game">
+              <!-- timer -->
+              <p id="countdown"></p> 
+
+              <!-- imagem circulos -->
+              <div class="escape-container">
+                <!-- imagem  -->
+                  <img src="../img/escaperoomlevels.png" alt="Escape Room" usemap="#image-map">
+              </div>
+              
+              <!-- escape room quiz imagemap -->
+              <map name="image-map" class="img-fluid image-map">
+                  <area target="_self" alt="1" title="1" href="#" coords="142,78,76" shape="circle" id="1">
+                  <area target="_self" alt="2" title="2" href="#" coords="371,215,78" shape="circle" id="2">
+                  <area target="_self" alt="3" title="3" href="#" coords="590,92,77" shape="circle" id="3">
+                  <area target="_self" alt="4" title="4" href="#" coords="852,77,75" shape="circle" id="4">
+                  <area target="_self" alt="5" title="5" href="#" coords="1116,151,77" shape="circle" id="5">
+                  <area target="_self" alt="6" title="6" href="#" coords="1214,381,76" shape="circle" id="6">
+                  <area target="_self" alt="7" title="7" href="#" coords="1107,617,76" shape="circle" id="7">
+                  <area target="_self" alt="8" title="8" href="#" coords="886,691,77" shape="circle" id="8">
+                  <area target="_self" alt="9" title="9" href="#" coords="660,559,77" shape="circle" id="9">
+                  <area target="_self" alt="10" title="10" href="#" coords="399,572,76" shape="circle" id="10">
+                  <area target="_self" alt="X" title="X" href="#" coords="211,823,142" shape="circle" id="x">
+              </map>
+            </div>
+
+
+            <!-- The Modal -->
+            <div id="quizModal" class="modal">
+
+              <!-- Modal content Question-->
+              <div class="modal-content">
+                <span class="close">&times;</span>
+                  <!-- Quiz Container -->
+                  <div class="quiz-container">
+                    <div class="row align-items-center " >
+                        <!-- Question  -->
+                        <div class="col-6 quiz-c1">
+                            <h2 id="questionnumber">Question 1:</h2>
+                            <h3 id="question">Question QUestion Question Question Question Question Question Question </h3>
+                        </div>
+                        <!-- Quiz Image -->
+                        
+                    </div>
+                    <div class="row mt-4 ">
+                        <!-- Options 1 and 3 -->
+                        <div class="col-md-6 quiz-c1">
+                            <div class="quiz-option mb-2">
+                                <button id="answer1" class="btn btn-block quiz-option-1">Option 1</button>
+                            </div>
+                            <div class="quiz-option mb-2">
+                                <button id="answer2" class="btn btn-block quiz-option-3">Option 3</button>
+                            </div>
+                        </div>
+                        <!-- Options 2 and 4 -->
+                        <div class="col-md-6 quiz-c2">
+                            <div class="quiz-option mb-2">
+                                <button id="answer3" class="btn btn-block quiz-option-2">Option 2</button>
+                            </div>
+                            <div class="quiz-option mb-2">
+                                <button id="answer4" class="btn btn-block quiz-option-4">Option 4</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+              </div>
+
+
+          </div>
+        </div>
+      </section>
+
+        <script type="module" src="../js/views/QuizView.js"></script>
+        <script type="module" src="../js/views/SideBarView.js"></script>
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+          integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous">
+        </script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+          integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous">
+        </script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+
+  </body>
+</html>

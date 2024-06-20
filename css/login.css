@@ -1,0 +1,114 @@
+body {
+    margin: 0;
+    padding: 0;
+    background: #272228 !important;
+}
+
+
+/* content */
+.login-forms {
+    margin-top: 3rem;
+    left: 5rem;
+    position: fixed;
+    width: 90%;
+
+}
+
+.overlay {
+    position: absolute;
+    top: 40%;
+    left: 26rem;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+
+
+.overlay h1 {
+    font-size: 4rem;
+    color: #FEFFFA;
+}
+
+.logo {
+    width: 20rem;
+    height: auto;
+}
+
+.overlay p {
+    font-size: 1.1rem;
+    margin-top: 4.5rem;
+    color: #FEFFFA;
+}
+
+
+/* form */
+.formtab {
+    background-color: #FEFFFA; 
+    padding: 4rem 6rem;
+    border-radius: 2.5rem; 
+}
+
+
+form .form-label{
+    font-weight: bolder;
+    font-size: 1.4rem;
+
+}
+
+form .form-control {
+    background-color: #5B86CB;
+    border-radius: 3rem;
+    border: none;
+    color: white;
+    padding: 0.8rem;
+    margin-bottom: 2rem;
+}
+
+form .btn-primary {
+    background-color: black;
+    border-radius: 3rem;
+    border: none;
+    padding: 0.8rem 4.5rem;
+    font-size: 1.2rem;
+    font-weight: bolder;
+}
+
+form p{
+    font-weight: 600;
+    font-size: 1.1rem;
+}
+
+form p a{
+    text-decoration: none;
+    color: #5B86CB;
+    font-weight: 700;
+}
+
+/* Footer */
+
+
+@media (max-width: 1200px) {
+    .overlay h1 {
+        font-size: 6vw;
+        margin-right: 28rem;
+    }
+
+    .overlay img{
+        margin-right: 28rem;
+    }
+
+    .overlay p {
+        margin-right: 28rem;
+        font-size: 0.8rem;
+    }
+
+    .footer-logo-pporto,
+    .footer-logo-esmad {
+        max-width: 80px;
+    }
+
+    .social-icon {
+        width: 25px;
+        height: 25px;
+    }
+}

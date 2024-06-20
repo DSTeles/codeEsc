@@ -1,0 +1,170 @@
+@import url(../css/style.css);
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #fefffa;
+}
+
+
+
+/* HEADER */
+.img_shape {
+    position: fixed;
+    left: 0;
+    top: 0.5rem;
+    max-width:80%;
+    z-index: 1;
+}
+
+.retangulo{
+    height: 0.55rem;
+    width: 100%;
+    position: fixed;
+    background-color: #272228;
+    top: 0;
+    left: 0;
+    z-index: 2;
+}
+
+
+
+                                                                            /*LOGO*/
+.logo {
+    top: 1rem;
+    left: 1.5rem;
+    width: 17rem;
+    position: fixed;
+}
+
+
+/*LOGIN*/
+.login {
+    border-radius: 4rem; 
+    border: 1px solid #FEFFFA;
+    padding: 0.3rem 4rem;
+    margin: 1.4rem ;
+    align-items: center;  
+}
+
+.login_text {
+    font-weight: 700;
+    font-size: 1.2rem;
+}
+
+.profile-pic{
+    width: 3.8rem;
+    height: 3.8rem; 
+    margin-left: 5rem;
+}
+
+/*Configurations*/
+.configurations {
+    background-color: #fefffa;
+    color: #272228;
+    border-radius: 2rem;
+    height: 23rem;
+    width: 16rem;
+    margin: 1.5rem;
+}
+
+.configurations-title {
+    color: #000; 
+    font-size: 1.6rem;
+    font-weight: 800;
+    padding: 1.5rem;
+}
+
+.config-icon{
+    margin-right: 0.1rem;
+}
+
+.configurations-line {
+    border-top: 0.15rem solid #272228; 
+    margin: 0;
+}
+
+
+.back-title a{
+    text-decoration: none;
+    color: #000; 
+    font-size: 1.5rem;
+    font-weight: 600;
+}
+
+/* OffCanvas - SideBar */
+.navbar-button {
+    display: none;
+}
+
+.offcanvas.show{
+    background-color: #272228;
+    overflow-y: auto; 
+    height: 100vh;
+}
+
+.offcanvas.show .header{
+    padding-top: -2rem;
+}
+
+.offcanvas.show .sidebar {
+    margin-top: 20rem;
+    margin-right: 1rem;
+}
+
+.offcanvas.show .navbar-nav {
+    margin: 1rem 0;
+}
+
+.offcanvas.show .navbar-items{
+    margin-left: 1rem;
+}
+
+.offcanvas.show .offcanvas-title{
+    color: #FEFFFA;
+    font-size: 2rem;
+    margin: 2rem 0 -2.5rem 2rem; 
+}
+
+.offcanvas.show .nav-item{
+    font-size: 1.3rem;
+    margin-left: 3rem;
+}
+
+/* Page Content  */
+/* Questions Section  */
+
+.question-card{
+    background-color: #fdfff5;
+    margin-bottom: 0;
+    padding-top: 1rem;
+}
+.question-title{
+    margin-left: 2.5rem;
+    font-size: 1.5rem;
+    font-weight: 700;
+}
+
+.form-check{
+    margin-left: 2.5rem;
+    margin-bottom: 1rem;
+}
+
+.question-card hr {
+    margin: 0;
+    border-top: 0.2rem solid #272228;
+    width: 100%;
+    margin-top: 1rem;
+}
+
+
+
+@media (max-width: 992px) {
+    .navbar-button {
+        display: block;
+    }
+
+    .sidebar {
+        display: none;
+    }
+}

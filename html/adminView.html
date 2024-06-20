@@ -1,0 +1,445 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Admin View - Edit Escape Room</title>
+    <link href="../css/adminView.css" rel="stylesheet" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
+</head>
+<body>
+    <!-- Admin View - Edit Escape Room -->
+
+    <!-- Retângulo -->
+    <div class="retangulo"></div>
+
+    <!-- Background Image / logo -->
+    <div class="img_shape">
+        <a href="../index.html">
+            <img src="../img/shape.png" alt="image background" class="img-fluid"/>
+            <img src="../img/logo.svg" alt="logo" class="logo"/>
+        </a>
+    </div>
+   
+     <!-- Sidebar Button -->
+     <button class="menu-toggle btn" id="menu-toggle" style="right: 0; background-color: #272228; color: #FEFFFA; font-size: 2rem;">≡</button>
+     <!-- Sidebar -->
+     <div class="wrapper" id="wrapper">
+       <aside class="sidebar-wrapper" id="sidebar-wrapper"  >
+           <a href="../html/signUp.html" class="login-link">
+             <div class="login d-flex">
+               <div class="login-text">Admin</div>
+               <img src="../img/profile-pic.svg" class="profile_pic" alt="Profile Picture"> 
+             </div>
+           </a>
+           <div class="sidebar-links">
+             <ul class="sidebar-nav text-center h-100 col-4">
+               <li class="sidebar-item">
+                 <a class="sidebar-link" href="../html/about.html">About</a>
+               </li>
+               <li class="sidebar-item">
+                 <a class="sidebar-link" href="../html/escapeRoom.html">Escape Room</a>
+               </li>
+               <li class="sidebar-item">
+                 <a class="sidebar-link" href="../html/subjects.html">Subjects</a>
+               </li>
+               <li class="sidebar-item">
+                 <a class="sidebar-link" href="../html/alumni.html">Alumni</a>
+               </li>
+             </ul>
+           </div>
+           <div class="configurations text-center">            
+                <h2 class="configurations-title"><svg class="config-icon" width="2.6rem" height="2.6rem" viewBox="0 0 51 51" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path id="config-icon" d="M30.7657 12.5798C30.3153 13.0393 30.063 13.6571 30.063 14.3006C30.063 14.9441 30.3153 15.5619 30.7657 16.0215L34.6991 19.9548C35.1586 20.4052 35.7764 20.6575 36.4199 20.6575C37.0634 20.6575 37.6812 20.4052 38.1407 19.9548L47.4087 10.6869C48.6448 13.4185 49.0191 16.4621 48.4816 19.4119C47.9442 22.3616 46.5205 25.0776 44.4003 27.1977C42.2802 29.3179 39.5643 30.7415 36.6145 31.279C33.6647 31.8165 30.6212 31.4422 27.8895 30.206L10.9024 47.1931C9.92443 48.1711 8.59799 48.7205 7.21491 48.7205C5.83183 48.7205 4.5054 48.1711 3.52741 47.1931C2.54943 46.2151 2 44.8887 2 43.5056C2 42.1225 2.54943 40.7961 3.52741 39.8181L20.5145 22.831C19.2784 20.0994 18.9041 17.0558 19.4415 14.1061C19.979 11.1563 21.4027 8.44033 23.5228 6.32018C25.643 4.20003 28.3589 2.77637 31.3087 2.23891C34.2585 1.70145 37.302 2.07573 40.0337 3.31187L30.7903 12.5552L30.7657 12.5798Z" stroke="black" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                    Settings</h2>
+                <p class="configurations-line"></p>
+                <h2 class="back-title"><a href="../html/escapeRoom.html">Go back to<br>Escape Room</a></h2>
+                <p class="configurations-line"></p>
+            </div>
+                <!-- Footer Section -->
+            <footer class="footer text-light py-4">
+                <div class="container text-center">
+                    <div class="row">
+                        <div class="col-md-6 mb-3 d-flex flex-column align-items-center justify-content-center" style="margin-top: -3.5rem;">
+                            <img src="../img/pporto.svg" alt="Institute Logo" class="footer-logo-pporto mb-2" style=" transform: rotate(90deg); ">
+                            <img src="../img/esmadLogo.svg" alt="Faculty Logo" class="footer-logo-esmad" style="margin-top: -2.5rem; margin-left: -1.5rem;">
+                        </div>
+                        <div class="col-md-6 mb-3 d-flex flex-wrap justify-content-center align-items-center">
+                            <a href="https://www.facebook.com/pporto.esmad/" class="social-icon-link"><img src="../img/faceLogo.svg" alt="Facebook" class="social-icon facebook"></a>
+                            <a href="https://x.com/pporto_esmad" class="social-icon-link"><img src="../img/twitterLogo.svg" alt="Twitter" class="social-icon twitter"></a>
+                            <a href="https://www.instagram.com/esmad_pporto" class="social-icon-link"><img src="../img/instagramLogo.svg" alt="Instagram" class="social-icon instagram"></a>
+                            <a href="https://www.linkedin.com/company/pportoesmad/" class="social-icon-link"><img src="../img/linkedinLogo.svg" alt="LinkedIn" class="social-icon linkedin"></a>
+                            <a href="https://www.youtube.com/channel/UCARMgrCS_Fs33og7h3_bsIQ" class="social-icon-link"><img src="../img/youtubeLogo.svg" alt="YouTube" class="social-icon youtube"></a>
+                            <a href="https://issuu.com/esmad_pporto" class="social-icon-link"><img src="../img/issuuLogo.svg" alt="GitHub" class="social-icon github"></a>
+                        </div>
+                    </div>
+                </div>
+            </footer>
+        </aside>
+   
+       <!-- Page Content  -->
+       <section id="content-wrapper">
+            <div class="row">
+                <div class="col-lg-12">
+                    <!-- Question1 -->
+                    <div class="question-card" >
+                        <form id="quesion1" style="margin-top: 8rem;">
+                            <!-- questions -->
+                            <label for="question" class="question-title">Question 1:</label>
+                            <input type="text" name="question" id="question1"><br>
+                            <!-- answer1 -->
+                            <div class="answer1">
+                                <label for="answer1" id="answer1validation">Right Answer:</label>
+                                <input type="text" name="answer1" id="answer1" value="answer1">
+                            </div>
+                            <!-- answer2 -->
+                            <div class="answer2">
+                                <label for="answer2" id="answer1validation">Option 2:</label>
+                                <input type="text" name="answer2" id="answer2" value="answer2">
+                            </div>
+                            <!-- answer3 -->
+                            <div class="answer3">
+                                <label for="answer3" id="answer1validation">Option 3:</label>
+                                <input type="text" name="answer3" id="answer3" value="answer3">
+                            </div>
+                            <!-- answer4 -->
+                            <div class="answer4">
+                                <label for="answer4" id="answer1validation">Option 4:</label>
+                                <input type="text" name="answer4" id="answer4" value="answer4">
+                            </div>
+                            <input type="submit" value="Confirm">
+                        </form>
+                        <hr>
+                    </div>
+
+                    <!-- Question 2 -->
+                    <div class="question-card">
+                        <form id="quesion2">
+                            <!-- questions -->
+                            <label for="question" class="question-title">Question 2:</label>
+                            <input type="text" name="question" id="question1"><br>
+                            <!-- answer1 -->
+                            <div class="answer1">
+                                <label for="answer1" id="answer1validation">Right Answer:</label>
+                                <input type="text" name="answer1" id="answer1" value="answer1">
+                            </div>
+                            <!-- answer2 -->
+                            <div class="answer2">
+                                <label for="answer2" id="answer1validation">Option 2:</label>
+                                <input type="text" name="answer2" id="answer2" value="answer2">
+                            </div>
+                            <!-- answer3 -->
+                            <div class="answer3">
+                                <label for="answer3" id="answer1validation">Option 3:</label>
+                                <input type="text" name="answer3" id="answer3" value="answer3">
+                            </div>
+                            <!-- answer4 -->
+                            <div class="answer4">
+                                <label for="answer4" id="answer1validation">Option 4:</label>
+                                <input type="text" name="answer4" id="answer4" value="answer4">
+                            </div>
+                            <input type="submit" value="Confirm">
+                        </form>
+                        <hr>
+                    </div>
+
+                    <!-- Question 3 -->
+                    <div class="question-card">
+                        <form id="quesion3">
+                            <!-- questions -->
+                            <label for="question" class="question-title">Question 3:</label>
+                            <input type="text" name="question" id="question1"><br>
+                            <!-- answer1 -->
+                            <div class="answer1">
+                                <label for="answer1" id="answer1validation">Right Answer:</label>
+                                <input type="text" name="answer1" id="answer1" value="answer1">
+                            </div>
+                            <!-- answer2 -->
+                            <div class="answer2">
+                                <label for="answer2" id="answer1validation">Option 2:</label>
+                                <input type="text" name="answer2" id="answer2" value="answer2">
+                            </div>
+                            <!-- answer3 -->
+                            <div class="answer3">
+                                <label for="answer3" id="answer1validation">Option 3:</label>
+                                <input type="text" name="answer3" id="answer3" value="answer3">
+                            </div>
+                            <!-- answer4 -->
+                            <div class="answer4">
+                                <label for="answer4" id="answer1validation">Option 4:</label>
+                                <input type="text" name="answer4" id="answer4" value="answer4">
+                            </div>
+                            <input type="submit" value="Confirm">
+                        </form>
+                        <hr>
+                    </div>
+
+                    <!-- Question 4 -->
+                    <div class="question-card">
+                        <form id="quesion4">
+                            <!-- questions -->
+                            <label for="question" class="question-title">Question 4:</label>
+                            <input type="text" name="question" id="question1"><br>
+                            <!-- answer1 -->
+                            <div class="answer1">
+                                <label for="answer1" id="answer1validation">Right Answer:</label>
+                                <input type="text" name="answer1" id="answer1" value="answer1">
+                            </div>
+                            <!-- answer2 -->
+                            <div class="answer2">
+                                <label for="answer2" id="answer1validation">Option 2:</label>
+                                <input type="text" name="answer2" id="answer2" value="answer2">
+                            </div>
+                            <!-- answer3 -->
+                            <div class="answer3">
+                                <label for="answer3" id="answer1validation">Option 3:</label>
+                                <input type="text" name="answer3" id="answer3" value="answer3">
+                            </div>
+                            <!-- answer4 -->
+                            <div class="answer4">
+                                <label for="answer4" id="answer1validation">Option 4:</label>
+                                <input type="text" name="answer4" id="answer4" value="answer4">
+                            </div>
+                            <input type="submit" value="Confirm">
+                        </form>
+                        <hr>
+                    </div>
+
+                    <!-- Question 5 -->
+                    <div class="question-card">
+                        <form id="quesion5">
+                            <!-- questions -->
+                            <label for="question" class="question-title">Question 5:</label>
+                            <input type="text" name="question" id="question1"><br>
+                            <!-- answer1 -->
+                            <div class="answer1">
+                                <label for="answer1" id="answer1validation">Right Answer:</label>
+                                <input type="text" name="answer1" id="answer1" value="answer1">
+                            </div>
+                            <!-- answer2 -->
+                            <div class="answer2">
+                                <label for="answer2" id="answer1validation">Option 2:</label>
+                                <input type="text" name="answer2" id="answer2" value="answer2">
+                            </div>
+                            <!-- answer3 -->
+                            <div class="answer3">
+                                <label for="answer3" id="answer1validation">Option 3:</label>
+                                <input type="text" name="answer3" id="answer3" value="answer3">
+                            </div>
+                            <!-- answer4 -->
+                            <div class="answer4">
+                                <label for="answer4" id="answer1validation">Option 4:</label>
+                                <input type="text" name="answer4" id="answer4" value="answer4">
+                            </div>
+                            <input type="submit" value="Confirm">
+                        </form>
+                        <hr>
+                    </div>
+
+                    <!-- Question 6 -->
+                    <div class="question-card">
+                        <form id="quesion6">
+                            <!-- questions -->
+                            <label for="question" class="question-title">Question 6:</label>
+                            <input type="text" name="question" id="question1"><br>
+                            <!-- answer1 -->
+                            <div class="answer1">
+                                <label for="answer1" id="answer1validation">Right Answer:</label>
+                                <input type="text" name="answer1" id="answer1" value="answer1">
+                            </div>
+                            <!-- answer2 -->
+                            <div class="answer2">
+                                <label for="answer2" id="answer1validation">Option 2:</label>
+                                <input type="text" name="answer2" id="answer2" value="answer2">
+                            </div>
+                            <!-- answer3 -->
+                            <div class="answer3">
+                                <label for="answer3" id="answer1validation">Option 3:</label>
+                                <input type="text" name="answer3" id="answer3" value="answer3">
+                            </div>
+                            <!-- answer4 -->
+                            <div class="answer4">
+                                <label for="answer4" id="answer1validation">Option 4:</label>
+                                <input type="text" name="answer4" id="answer4" value="answer4">
+                            </div>
+                            <input type="submit" value="Confirm">
+                        </form>
+                        <hr>
+                    </div>
+
+                    <!-- Question 7 -->
+                    <div class="question-card">
+                        <form id="quesion7">
+                            <!-- questions -->
+                            <label for="question" class="question-title">Question 7:</label>
+                            <input type="text" name="question" id="question1"><br>
+                            <!-- answer1 -->
+                            <div class="answer1">
+                                <label for="answer1" id="answer1validation">Right Answer:</label>
+                                <input type="text" name="answer1" id="answer1" value="answer1">
+                            </div>
+                            <!-- answer2 -->
+                            <div class="answer2">
+                                <label for="answer2" id="answer1validation">Option 2:</label>
+                                <input type="text" name="answer2" id="answer2" value="answer2">
+                            </div>
+                            <!-- answer3 -->
+                            <div class="answer3">
+                                <label for="answer3" id="answer1validation">Option 3:</label>
+                                <input type="text" name="answer3" id="answer3" value="answer3">
+                            </div>
+                            <!-- answer4 -->
+                            <div class="answer4">
+                                <label for="answer4" id="answer1validation">Option 4:</label>
+                                <input type="text" name="answer4" id="answer4" value="answer4">
+                            </div>
+                            <input type="submit" value="Confirm">
+                        </form>
+                        <hr>
+                    </div>
+
+                    <!-- Question 8 -->
+                    <div class="question-card">
+                        <form id="quesion8">
+                            <!-- questions -->
+                            <label for="question" class="question-title">Question 8:</label>
+                            <input type="text" name="question" id="question1"><br>
+                            <!-- answer1 -->
+                            <div class="answer1">
+                                <label for="answer1" id="answer1validation">Right Answer:</label>
+                                <input type="text" name="answer1" id="answer1" value="answer1">
+                            </div>
+                            <!-- answer2 -->
+                            <div class="answer2">
+                                <label for="answer2" id="answer1validation">Option 2:</label>
+                                <input type="text" name="answer2" id="answer2" value="answer2">
+                            </div>
+                            <!-- answer3 -->
+                            <div class="answer3">
+                                <label for="answer3" id="answer1validation">Option 3:</label>
+                                <input type="text" name="answer3" id="answer3" value="answer3">
+                            </div>
+                            <!-- answer4 -->
+                            <div class="answer4">
+                                <label for="answer4" id="answer1validation">Option 4:</label>
+                                <input type="text" name="answer4" id="answer4" value="answer4">
+                            </div>
+                            <input type="submit" value="Confirm">
+                        </form>
+                        <hr>
+                    </div>
+
+                    <!-- Question 9 -->
+                    <div class="question-card">
+                        <form id="quesion9">
+                            <!-- questions -->
+                            <label for="question" class="question-title">Question 9:</label>
+                            <input type="text" name="question" id="question1"><br>
+                            <!-- answer1 -->
+                            <div class="answer1">
+                                <label for="answer1" id="answer1validation">Right Answer:</label>
+                                <input type="text" name="answer1" id="answer1" value="answer1">
+                            </div>
+                            <!-- answer2 -->
+                            <div class="answer2">
+                                <label for="answer2" id="answer1validation">Option 2:</label>
+                                <input type="text" name="answer2" id="answer2" value="answer2">
+                            </div>
+                            <!-- answer3 -->
+                            <div class="answer3">
+                                <label for="answer3" id="answer1validation">Option 3:</label>
+                                <input type="text" name="answer3" id="answer3" value="answer3">
+                            </div>
+                            <!-- answer4 -->
+                            <div class="answer4">
+                                <label for="answer4" id="answer1validation">Option 4:</label>
+                                <input type="text" name="answer4" id="answer4" value="answer4">
+                            </div>
+                            <input type="submit" value="Confirm">
+                        </form>
+                        <hr>
+                    </div>
+
+                    <!-- Question 10 -->
+                    <div class="question-card">
+                        <form id="quesion10">
+                            <!-- questions -->
+                            <label for="question" class="question-title">Question 10:</label>
+                            <input type="text" name="question" id="question1"><br>
+                            <!-- answer1 -->
+                            <div class="answer1">
+                                <label for="answer1" id="answer1validation">Right Answer:</label>
+                                <input type="text" name="answer1" id="answer1" value="answer1">
+                            </div>
+                            <!-- answer2 -->
+                            <div class="answer2">
+                                <label for="answer2" id="answer1validation">Option 2:</label>
+                                <input type="text" name="answer2" id="answer2" value="answer2">
+                            </div>
+                            <!-- answer3 -->
+                            <div class="answer3">
+                                <label for="answer3" id="answer1validation">Option 3:</label>
+                                <input type="text" name="answer3" id="answer3" value="answer3">
+                            </div>
+                            <!-- answer4 -->
+                            <div class="answer4">
+                                <label for="answer4" id="answer1validation">Option 4:</label>
+                                <input type="text" name="answer4" id="answer4" value="answer4">
+                            </div>
+                            <input type="submit" value="Confirm">
+                        </form>
+                        <hr>
+                    </div>
+
+                    <!-- Question X -->
+                    <div class="question-card">
+                        <form id="quesionx">
+                            <!-- questions -->
+                            <label for="question" class="question-title">Question X:</label>
+                            <input type="text" name="question" id="question1"><br>
+                            <!-- answer1 -->
+                            <div class="answer1">
+                                <label for="answer1" id="answer1validation">Right Answer:</label>
+                                <input type="text" name="answer1" id="answer1" value="answer1">
+                            </div>
+                            <!-- answer2 -->
+                            <div class="answer2">
+                                <label for="answer2" id="answer1validation">Option 2:</label>
+                                <input type="text" name="answer2" id="answer2" value="answer2">
+                            </div>
+                            <!-- answer3 -->
+                            <div class="answer3">
+                                <label for="answer3" id="answer1validation">Option 3:</label>
+                                <input type="text" name="answer3" id="answer3" value="answer3">
+                            </div>
+                            <!-- answer4 -->
+                            <div class="answer4">
+                                <label for="answer4" id="answer1validation">Option 4:</label>
+                                <input type="text" name="answer4" id="answer4" value="answer4">
+                            </div>
+                            <input type="submit" value="Confirm">
+                        </form>
+                        <hr>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+<script type="module" src="../js/quiz.js"></script>
+<script type="module" src="../js/views/SideBarView.js"></script>
+	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+		integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous">
+	</script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+		integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous">
+	</script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+
+</body>
+</html>

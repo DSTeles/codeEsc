@@ -1,0 +1,141 @@
+body {
+    height: 100vh;
+    margin: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #272228!important;
+}
+
+/* Close Icon  */
+.close-icon {
+    position: absolute;
+    top: 3rem;
+    left: 3rem;
+    width: 3.5rem;
+    height: 3.5rem;
+    color: #fefffa;
+    cursor: pointer;
+}
+
+/* Quiz Conatiner  */
+.quiz-container {
+    width: 100%;
+}
+
+/* Question  */
+.quiz-container h2{
+    color: #5b86cb;
+    font-size: 2.7rem;
+    font-weight: 700;
+}
+
+.quiz-container h3{
+    color: #fefffa;
+    font-size: 1.7rem;
+    font-weight: 400;
+
+}
+
+/* Quiz Image  */
+.quiz-container .quiz-image{
+    width: 23rem;
+    border-radius: 3rem;
+    display: flex;
+}
+
+/* Option Button  */
+.quiz-option button{
+    width: 22rem;
+    height: 7rem;
+    border-radius: 2rem;
+    font-size: 2rem;
+    color: #fefffa;
+    font-weight: 500;
+}
+
+/* Option1  */
+.quiz-container .quiz-option-1{
+    background-color: #5b86cb;
+}
+
+.quiz-container .quiz-option-1:hover{
+    background-color: #305795;
+    color: #fefffa;
+    transform: scale(1.05);
+    transition: transform 0.3s ease; 
+}
+
+/* Option 2 */
+.quiz-container .quiz-option-2{
+    background-color: #845ed5;
+}
+
+.quiz-container .quiz-option-2:hover{
+    background-color: #5b4096;
+    color: #fefffa;
+    transform: scale(1.05);
+    transition: transform 0.3s ease; 
+}
+
+/* Option 3 */
+.quiz-container .quiz-option-3{
+    background-color: #e0417b;
+}
+
+.quiz-container .quiz-option-3:hover{
+    background-color: #bf2b61;
+    color: #fefffa;
+    transform: scale(1.05);
+    transition: transform 0.3s ease; 
+}
+
+/* Option 4 */
+.quiz-container .quiz-option-4{
+    background-color: #ab2c48;
+}
+
+.quiz-container .quiz-option-4:hover{
+    background-color: #611223;
+    color: #fefffa;
+    transform: scale(1.05);
+    transition: transform 0.3s ease; 
+}
+
+/* Colum Option 1 and 3  */
+.quiz-c1 {
+    text-align: right;
+}
+
+/* Colum Option 2 and 4  */
+.quiz-c2{
+    text-align: left;
+}
+
+
+@media screen and (max-width: 760px) {
+
+.quiz-container h2{
+        margin-top: 25rem;
+        width: 20rem;
+        text-align: center;
+        margin-left: 2rem;
+}
+
+.quiz-container h3{
+        width: 25rem;
+        margin-right: 7rem;
+        text-align: center;
+        margin-bottom: 1rem;
+}
+
+.quiz-container .quiz-image{
+        margin-left: 0.5rem;
+        text-align: center;
+}
+
+.quiz-c1, .quiz-c2 {
+        text-align: center;
+}
+
+}

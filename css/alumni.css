@@ -1,0 +1,237 @@
+@import url(/css/style.css);
+
+
+.alumni-content{
+    margin-top: 9rem; 
+}
+
+/* Page Title */
+.alumni-container .alumni-title{
+    font-size: 3.4rem;
+    font-weight: 700;
+    color: #5b86cb;
+}
+
+.main-buttons{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Add Post Button */
+.alumni-container .addPost-btn{
+    background-color: #5b86cb;
+    border-radius: 2rem;
+    padding: 0.4rem;
+    margin-left: 2rem;
+    width: 10rem;
+    color: #fefffa;
+    font-weight: 500;
+    transition: transform 0.3s ease;
+}
+
+.alumni-container .addPost-btn:hover{
+    background-color: #20498d;
+    color: #fefffa;
+    transform: scale(1.05);
+}
+
+/* Add Post Plus Icon */
+.addPost-btn .plus-icon {
+    color: white;
+}
+
+/* Dropdown/Most Relevant Button  */
+.alumni-container .dropdown-btn{
+    background-color: #5b86cb;
+    border-radius: 2rem;
+    padding: 0.7rem;
+    width: 12rem;
+    color: #fefffa;
+    font-weight: 500;
+    margin-left: 64rem;
+    transition: transform 0.2s ease;
+}
+
+.alumni-container .dropdown-btn:hover{
+    background-color: #20498d;
+    color: #fefffa;
+    transform: scale(1.05);
+}
+
+/* Dropdown Icon */
+.dropdown-btn .dropdown-icon{
+    margin-left: 0.5rem;
+}
+
+/* Filter Button */
+.alumni-container .filter-btn{
+    background-color: #5b86cb;
+    border-radius: 3rem;
+    padding: 0.55rem;
+    width: 3.5rem;
+    color: #fefffa;
+    font-weight: 500;
+    transition: transform 0.3s ease;
+
+}
+
+.alumni-container .filter-btn:hover{
+    background-color: #20498d;
+    color: #fefffa;
+    transform: scale(1.05);
+}
+
+/* Filter Icon */
+.filter-btn .filter-icon{
+    width: 1.9rem;
+    height: 1.9rem;
+}
+
+/* Dropdown Menu */
+.dropdown .dropdown-menu{
+    background-color: #5b86cb;
+}
+
+/* Dropdown Items */
+.dropdown-menu .dropdown-item{
+    color: #fefffa;
+    font-weight: 400;
+}
+
+/* Profile Info */
+.profile-info-container{
+    margin: 3rem 3rem 1.3rem 3rem;
+    align-items: center; 
+    display: flex;
+} 
+
+
+/* Profile Pic */
+.profile-info-container .profile-pic{
+    padding-right: 0;
+}
+
+/* Profile Name */
+.profile-info-container .profile-name{
+    font-size: 1.5rem;
+    font-weight: 500;
+    width: 7rem;
+    color: #272228;
+}
+
+.profile-info-container .verified-alumni{
+    font-size: 1rem;
+    font-weight: 300;
+    color: #272228;
+}
+
+/* Post Card Container  */
+.post-card-container{
+    margin-left: 4rem;
+    margin-right: 4rem;
+}
+
+/* Title  */
+.post-card-container .post-title{
+    font-size: 1.5rem;
+    font-weight: 645;
+    margin-bottom: 1rem;
+}
+
+/* Post Content  */
+.post-body {
+    background-color: #5b86cb; 
+    height: 15rem;
+    position: relative; 
+    display: flex;
+    justify-content: center; 
+    align-items: center;
+    border-radius: 2rem;
+    padding: 1rem; 
+}
+
+/* See More Button  */
+.see-more-btn {
+    background-color: #fefffa; 
+    color: #272228; 
+    padding: 0.5rem 1.7rem;
+    text-decoration: none;
+    border-radius: 6rem;
+    font-weight: 500;
+    transition:  transform 0.3s ease;
+    position: absolute;
+    bottom: 1rem;
+}
+
+.see-more-btn:hover {
+    transform: scale(1.05); 
+}
+
+/* Quando Clicamos no Botão See More  */
+.post-card-container .post-text{
+    margin-bottom: 1rem;
+}
+
+.post-body-extended-big{
+    background-color: #5b86cb; 
+    height: 23rem; 
+    border-radius: 2rem;
+    margin-bottom: 1rem;
+    padding: 1rem;
+    position: relative;
+}
+
+.post-body-extended-small{
+    background-color: #5b86cb; 
+    height: 11rem; 
+    border-radius: 2rem; 
+    margin-bottom: 1rem;
+    padding: 1rem; 
+    position: relative; 
+}
+
+
+.post-body-extended-small-plus{
+    background-color: #5b86cb; 
+    height: 11rem; 
+    border-radius: 2rem; 
+    margin-bottom: 1rem;
+    padding: 1rem; 
+    position: relative; 
+}
+
+
+.plus-btn {
+    color: #fefffa;
+    text-decoration: none;
+    position: absolute;
+    font-size: 8rem;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+@media (max-width: 1350px) {
+    .main-buttons{
+        flex-direction: column;
+    }
+
+    .alumni-container .addPost-btn{
+        margin-left: 1rem;
+    }
+
+    .alumni-container .dropdown-btn {
+        margin-left: 1rem;
+        margin-top: 1rem;
+    } 
+
+    .alumni-container .filter-btn{
+        margin-top: 1rem; 
+        margin-left: 1rem;
+    }
+
+    .profile-info-container{
+        margin-left: 1rem;
+    }
+}

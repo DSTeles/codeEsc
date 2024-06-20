@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Login</title>
+    <link href="../css/login.css" rel="stylesheet" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous"/>
+</head>
+<body>
+
+    <div class="login-forms d-flex justify-content-center align-items-center">
+        <div class="sign-row row">
+            <div class="col-sm-6">
+                <img src="../img/imagem login.png" alt="background image sign in" class="img-fluid" style="max-width: 100%; height: 73%; width: 390rem;">
+                <div class="overlay">
+                  <h1>Welcome back to</h1>
+                  <a href="../index.html"><img src="../img/logo.svg" alt="Logo" class="logo"></a>
+                  <p>An interactive space where you can learn all about the<br>TSIW course at ESMAD.</p>
+              </div>
+            </div>
+            <div class="col-sm-6">
+              <div class="formtab">
+                <form id="formLogin">
+                    <div class="mb-3">
+                      <label for="Username" class="form-label">Username:</label>
+                      <input type="text" class="form-control" id="usernameLogin" required aria-describedby="emailHelp">
+                    </div>
+                    <div class="mb-3">
+                      <label for="Password" class="form-label">Password:</label>
+                      <input type="password" class="form-control" id="passwordLogin" required>
+                    </div>
+                    <div class="d-flex justify-content-center">
+                      <button type="submit" class="btn btn-primary btn-lg">Log-In</button>
+                    </div>
+                  </form>
+                  <div class="mt-3 text-center">
+                      <p>Don’t have an account yet? <a href="signUp.html">Sign-up</a></p>
+                  </div>
+              </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer Section -->
+    <footer class="footer text-light py-4">
+      <div class="container text-center">
+        <div class="row">
+          <div class="col-md-6 mb-3 d-flex flex-column align-items-center justify-content-center" style="margin-top: -3.5rem;">
+            <img src="../img/pporto.svg" alt="Institute Logo" class="footer-logo-pporto mb-2" style=" transform: rotate(90deg); ">
+            <img src="../img/esmadLogo.svg" alt="Faculty Logo" class="footer-logo-esmad" style="margin-top: -2.5rem; margin-left: -1.5rem;">
+          </div>
+          <div class="col-md-6 mb-3 d-flex flex-wrap justify-content-center align-items-center">
+            <a href="https://www.facebook.com/pporto.esmad/" class="social-icon-link"><img src="../img/faceLogo.svg" alt="Facebook" class="social-icon facebook"></a>
+            <a href="https://x.com/pporto_esmad" class="social-icon-link"><img src="../img/twitterLogo.svg" alt="Twitter" class="social-icon twitter"></a>
+            <a href="https://www.instagram.com/esmad_pporto" class="social-icon-link"><img src="../img/instagramLogo.svg" alt="Instagram" class="social-icon instagram"></a>
+            <a href="https://www.linkedin.com/company/pportoesmad/" class="social-icon-link"><img src="../img/linkedinLogo.svg" alt="LinkedIn" class="social-icon linkedin"></a>
+            <a href="https://www.youtube.com/channel/UCARMgrCS_Fs33og7h3_bsIQ" class="social-icon-link"><img src="../img/youtubeLogo.svg" alt="YouTube" class="social-icon youtube"></a>
+            <a href="https://issuu.com/esmad_pporto" class="social-icon-link"><img src="../img/issuuLogo.svg" alt="GitHub" class="social-icon github"></a>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+
+    <script type="module" src="../js/views/SideBarView.js"></script>
+    <!-- jQuery -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <!-- popper.js -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <!-- bootstrap -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+  </body>
+</html>

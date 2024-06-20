@@ -1,0 +1,38 @@
+body {
+    background-color: #272228; 
+    font-family: Arial, sans-serif; 
+    margin: 0; 
+    padding: 4em; 
+}
+
+.subjectTitle {
+    font-size: 4rem; 
+    color: #fefffa; 
+    font-weight: 800;
+}
+
+.subjectText {
+    font-size: 1.5rem; 
+    color: #fefffa; 
+    line-height: 2; 
+    text-align: justify; 
+    margin-bottom: 1rem; 
+}
+
+@media (max-width: 970px) {
+    body {
+        padding: 5em; 
+    }
+
+    .subjectTitle {
+        font-size: 2rem; 
+        font-weight: 700;
+    }
+    
+    .subjectText {
+        font-size: 1rem; 
+        font-weight: 500;
+        line-height: 1.7; 
+        margin-bottom: 1rem; 
+    }
+}

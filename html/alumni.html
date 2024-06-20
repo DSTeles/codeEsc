@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Alumni</title>
+    <link href="../css/alumni.css" rel="stylesheet" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous" />
+</head>
+<body>
+
+      <!-- Retângulo -->
+      <div class="retangulo"></div>
+
+      <!-- Imagem de fundo e logo -->
+      <div class="img_shape">
+          <a href="../index.html">
+              <img src="../img/shape.png" alt="image background" class="img-fluid"/>
+              <img src="../img/logo.svg" alt="logo" class="logo"/>
+          </a>
+      </div>
+  
+    <!-- Sidebar Button -->
+    <button class="menu-toggle btn" id="menu-toggle" style="right: 0; background-color: #272228; color: #FEFFFA; font-size: 2rem;">≡</button>
+    <!-- Sidebar -->
+    <div class="wrapper" id="wrapper">
+      <aside class="sidebar-wrapper" id="sidebar-wrapper"  >
+          <a href="../html/signUp.html" class="login-link">
+            <div class="login d-flex">
+              <div class="login-text">Login / Register</div>
+              <img src="../img/profile-pic.svg" class="profile_pic" alt="Profile Picture"> 
+            </div>
+          </a>
+          <div class="sidebar-links">
+            <ul class="sidebar-nav text-center h-100 col-4">
+              <li class="sidebar-item">
+                <a class="sidebar-link" href="../html/about.html">About</a>
+              </li>
+              <li class="sidebar-item">
+                <a class="sidebar-link" href="../html/escapeRoom.html">Escape Room</a>
+              </li>
+              <li class="sidebar-item">
+                <a class="sidebar-link" href="../html/subjects.html">Subjects</a>
+              </li>
+              <li class="sidebar-item">
+                <a class="sidebar-link" href="../html/alumni.html">Alumni</a>
+              </li>
+            </ul>
+          </div>
+          <div class="achivements">
+            <h2 class="achivements_title text-center">Achievements</h2>
+            <ul>
+              <li>Escape Room</li>
+              <hr class="line">
+              <li>Quiz</li>
+              <hr class="line">
+              <li>Profile</li>
+              <hr class="line">
+            </ul>
+          </div>
+          <div class="escape_room">
+            <h1 class="escape_room_title">START YOUR<br> JOURNEY HERE </h1>
+            <a href="../html/escapeRoom.html" class="escape_room_btn d-flex">
+              <h2 class="escape_room_btn_name">Escape Room</h2>
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" style="margin-left: 12rem;" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-arrow-right"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+            </a>
+          </div>
+                  <!-- Footer Section -->
+          <footer class="footer text-light py-4">
+            <div class="container text-center">
+              <div class="row">
+                <div class="col-md-6 mb-3 d-flex flex-column align-items-center justify-content-center" style="margin-top: -3.5rem;">
+                  <img src="../img/pporto.svg" alt="Institute Logo" class="footer-logo-pporto mb-2" style=" transform: rotate(90deg); ">
+                  <img src="../img/esmadLogo.svg" alt="Faculty Logo" class="footer-logo-esmad" style="margin-top: -2.5rem; margin-left: -1.5rem;">
+                </div>
+                <div class="col-md-6 mb-3 d-flex flex-wrap justify-content-center align-items-center">
+                  <a href="https://www.facebook.com/pporto.esmad/" class="social-icon-link"><img src="../img/faceLogo.svg" alt="Facebook" class="social-icon facebook"></a>
+                  <a href="https://x.com/pporto_esmad" class="social-icon-link"><img src="../img/twitterLogo.svg" alt="Twitter" class="social-icon twitter"></a>
+                  <a href="https://www.instagram.com/esmad_pporto" class="social-icon-link"><img src="../img/instagramLogo.svg" alt="Instagram" class="social-icon instagram"></a>
+                  <a href="https://www.linkedin.com/company/pportoesmad/" class="social-icon-link"><img src="../img/linkedinLogo.svg" alt="LinkedIn" class="social-icon linkedin"></a>
+                  <a href="https://www.youtube.com/channel/UCARMgrCS_Fs33og7h3_bsIQ" class="social-icon-link"><img src="../img/youtubeLogo.svg" alt="YouTube" class="social-icon youtube"></a>
+                  <a href="https://issuu.com/esmad_pporto" class="social-icon-link"><img src="../img/issuuLogo.svg" alt="GitHub" class="social-icon github"></a>
+                </div>
+              </div>
+            </div>
+          </footer>
+      </aside>
+  
+      <!-- Page Content  -->
+      <section id="content-wrapper">
+        <div class="row">
+          <div class="col-lg-12">
+              <div class="alumni-content">
+                <!-- Alumni Projects Section -->
+                <div class="alumni-container">
+                  <div class="row">
+                    <h5 class="alumni-title text-center">ALUMNI</h5>
+                  </div>
+                  <div class="row mt-3 d-lg-flex main-buttons">
+                      <!-- Add Post Button -->
+                      <div class="col">
+                        <div class="d-grid">
+                          <button class="btn addPost-btn" type="button">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="2.5rem" height="2.5rem" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-plus"><line x1="12" y1="5" x2="12" y2="19"></line><line x1="5" y1="12" x2="19" y2="12"></line></svg>Add Post</button>
+                        </div>
+                      </div>
+                      <!-- Most Relevant Button -->
+                      <div class="col">
+                        <div class="dropdown">
+                          <button class="btn dropdown-btn" type="button" id="dropdownMenuButton" data-bs-toggle="dropdown" aria-expanded="false">
+                            Most Relevant
+                            <svg  class="dropdown-icon" xmlns="http://www.w3.org/2000/svg" width="29" height="27" viewBox="0 0 29 27" fill="none">
+                              <path d="M18.9067 23.7803C17.0213 27.297 11.9787 27.297 10.0933 23.7803L1.5596 7.86247C-0.226116 4.53159 2.18692 0.5 5.96627 0.5H23.0337C26.8131 0.5 29.2261 4.53159 27.4404 7.86246L18.9067 23.7803Z" fill="#FEFFFA"/>
+                            </svg>
+                          </button>  
+                          <!-- Dropdown Menu  -->
+                          <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                            <li><a class="dropdown-item" href="#">Option 1</a></li>
+                            <li><a class="dropdown-item" href="#">Option 2</a></li>
+                            <li><a class="dropdown-item" href="#">Option 3</a></li>
+                          </ul>
+                        </div>
+                      </div>
+                      <!-- Filter Button -->
+                      <div class="col">
+                        <div class="d-grid">
+                          <button class="btn filter-btn" type="button">
+                            <img src="../img/filter-icon.svg" class="filter-icon" alt="filter icon">
+                          </button>
+                        </div>
+                      </div>
+                      </div>
+                    </div>        
+                  </div>
+
+                   <!-- Profile Info -->
+                    <div class="profile-info-container">
+                      <div class="row">
+                        <div class="col">
+                          <img src="../img/inesReis.svg" alt="profile-pic" class="profile-pic" style="border-radius: 5rem;">
+                        </div>
+                        <div class="col" >
+                          <div class="profile-name">Inês Reis</div>
+                          <div class="row"><div class="verified-alumni">Verified Alumni</div></div>
+                        </div>
+                        <div class="col"><img src="../img/verify-blue-icon.svg" alt="verify-icon"></div>
+                      </div>                
+                    </div>
+                    <div class="post-card-container">
+                      <div class="row">
+                        <!-- Post Titles -->
+                        <div class="post-title">KendirStudios</div>
+                        <div class="post-title">Gestora de Projetos e UX Designer</div>
+                        <div class="post-title">Criadora de recursos educativos digitais premiados pela Direção-Geral de Educação</div>
+                      </div>
+                      <div class="row">
+                        <div class="post-body">
+                          <p class="post-body-info"> Digo, de coração cheio, que os três anos na licenciatura foram transformadores. Inicialmente sem rumo, descobri a minha paixão :o Design da Experiência do Utilizador e de Interfaces, apenas no segundo ano. A licenciatura, elogiada por muitos conhecidos pelas suas competências abrangentes, proporcionou-me não apenas formação profissional, mas também experiências académicas que nunca vou esquecer.</p>
+                          <!-- <a href="#" class="see-more-btn">See More</a> -->
+                        </div>
+                      </div>
+                    </div>
+                    <div class="post-divider"></div>
+
+
+
+                    <!-- Profile Info -->
+                    <div class="profile-info-container">
+                      <div class="row">
+                        <div class="col">
+                          <img src="../img/nunoSousa (1).svg" alt="profile-pic" class="profile-pic" style="border-radius: 5rem;">
+                        </div>
+                        <div class="col" >
+                          <div class="profile-name">Nuno Sousa</div>
+                          <div class="row"><div class="verified-alumni">Verified Alumni</div></div>
+                        </div>
+                        <div class="col"><img src="../img/verify-blue-icon.svg" alt="verify-icon"></div>
+                      </div>                
+                    </div>
+                    <div class="post-card-container">
+                      <div class="row">
+                        <!-- Post Titles -->
+                        <div class="post-title">Front-end developer na Carbmee</div>
+                        <div class="post-title">Governo Britânico</div>
+                        <div class="post-title">Young Juries do Awwwards</div>
+                      </div>
+                      <div class="row">
+                        <div class="post-body">
+                          <p class="post-body-info">Não posso deixar de referir que até ao entrar na ESMAD não sabia nada de programação e design, pelo que, além do meu esforço, o excelente acompanhamento dos professores e a sua experiência tanto a nível do ensino como também profissional foi sem dúvida o impulsionador disto tudo. Não poderia estar mais grato a todos os professores, colegas, e à ESMAD</p>
+                          <!-- <a href="#" class="see-more-btn">See More</a> -->
+                        </div>
+                      </div>
+                    </div>
+                    <div class="post-divider"></div>
+
+
+
+
+                    <!-- Profile Info -->
+                    <div class="profile-info-container">
+                      <div class="row">
+                        <div class="col">
+                          <img src="../img/raquelSilva.svg" alt="profile-pic" class="profile-pic" style="border-radius: 5rem;">
+                        </div>
+                        <div class="col" >
+                          <div class="profile-name">Raquel Silva</div>
+                          <div class="row"><div class="verified-alumni">Verified Alumni</div></div>
+                        </div>
+                        <div class="col"><img src="../img/verify-blue-icon.svg" alt="verify-icon"></div>
+                      </div>                
+                    </div>
+                    <div class="post-card-container">
+                      <div class="row">
+                        <!-- Post Titles -->
+                        <div class="post-title">Game Developer na Kendir Studios</div>
+                        <div class="post-title">Jogos educativos premiados na DigiEduHack 2021 e no Resilience Games 2022, a nível europeu! </div>
+                        <div class="post-title">Equipa finalista da edição 2022 do Born for Knowledge Rise, 2022.</div>
+                      </div>
+                      <div class="row">
+                        <div class="post-body">
+                          <p class="post-body-info">A passagem pela ESMAD e pela licenciatura em Tecnologias e Sistemas de Informação para a Web proporcionou-me o ingresso no mercado de trabalho e neste mundo do desenvolvimento dos jogos educativos, na qual realizo atualmente a minha vida profissional.</p>
+                          <!-- <a href="#" class="see-more-btn">See More</a> -->
+                        </div>
+                      </div>
+                    </div>
+                    <div class="post-divider"></div>
+                                                         <!-- Profile Info -->
+                    <div class="profile-info-container">
+                      <div class="row">
+                        <div class="col">
+                          <img src="../img/diogoFernandes (1).svg" alt="profile-pic" class="profile-pic" style="border-radius: 5rem;">
+                        </div>
+                        <div class="col" >
+                          <div class="profile-name">Diogo Fernandes</div>
+                          <div class="row"><div class="verified-alumni">Verified Alumni</div></div>
+                        </div>
+                        <div class="col"><img src="../img/verify-blue-icon.svg" alt="verify-icon"></div>
+                      </div>                
+                    </div>
+                    <div class="post-card-container">
+                      <div class="row">
+                        <!-- Post Titles -->
+                        <div class="post-title">Product Designer | Blip</div>
+                        <div class="post-title">Betfair, Paddy Power, Pokerstars, Fanduel, Sky Bet, etc. </div>
+                      </div>
+                      <div class="row">
+                        <div class="post-body">
+                          <p class="post-body-info">Consigo dizer com toda a certeza que tudo começou quando entrei nesta licenciatura- sempre tive um gosto pela programação e em Testemunhos descobrir mais sobre tecnologia em geral. TSIW deu-me todos os recursos necessários para conhecer a área por completo. Comecei inicialmente com o objetivo de seguir uma carreira em programação front-end, mas graças à vasta oferta que o curso nos dá, descobri tudo o que se passava para além do código. Com isto, descobri então o mundo deUserExperience e nunca mais olhei para trás.</p>
+                          <!-- <a href="#" class="see-more-btn">See More</a> -->
+                        </div>
+                      </div>
+                    </div>
+                    <div class="post-divider"></div>
+
+
+                      <!-- Profile Info -->
+                      <div class="profile-info-container">
+                        <div class="row">
+                          <div class="col">
+                            <img src="../img/nunoCosta.svg" alt="profile-pic" class="profile-pic" style="border-radius: 5rem;">
+                          </div>
+                          <div class="col" >
+                            <div class="profile-name">Nuno Costa</div>
+                            <div class="row"><div class="verified-alumni">Verified Alumni</div></div>
+                          </div>
+                          <div class="col"><img src="../img/verify-blue-icon.svg" alt="verify-icon"></div>
+                        </div>                
+                      </div>
+                      <div class="post-card-container">
+                        <div class="row">
+                          <!-- Post Titles -->
+                          <div class="post-title">Software Developer na MOG Technologies </div>
+                          <div class="post-title">Assistente convidado na ESMAD </div>
+                          <div class="post-title">1º lugar no concurso internacional de programação I Juezlti Contest of EU Code Week</div>
+                        </div>
+                        <div class="row">
+                          <div class="post-body">
+                            <p class="post-body-info">Ingressar em TSIW preparou-me para os desafios do mundo  profissional. Os diferentes projetos de grupo e o foco nas tecnologias mais recentes proporcionaram-me uma base sólida de conhecimentos e habilidades práticas, como o trabalho de  equipa e resolução de problemas.</p>
+                            <!-- <a href="#" class="see-more-btn">See More</a> -->
+                          </div>
+                        </div>
+                      </div>
+                      <div class="post-divider"></div>
+
+                                          <!-- Profile Info -->
+                    <div class="profile-info-container">
+                        <div class="row">
+                          <div class="col">
+                            <img src="../img/profile-pic.svg" alt="profile-pic" class="profile-pic">
+                          </div>
+                          <div class="col" >
+                            <div class="profile-name">Joana Castro</div>
+                            <div class="row"><div class="verified-alumni">Verified Alumni</div></div>
+                          </div>
+                          <div class="col"><img src="../img/verify-blue-icon.svg" alt="verify-icon"></div>
+                        </div>                
+                    </div>
+                    <div class="post-card-container">
+                      <div class="row">
+                        <!-- Post Titles -->
+                        <div class="post-title">Social Media/Kuanto Kusta</div>
+                      </div>
+                      <div class="row">
+                        <div class="post-body">
+                          <p class="post-body-info">Avancei com a candidatura em Tecnologias e Sistemas de Informação para a Web, sem saber ao certo o que ia aprender. Quando percebi que era programação, fiquei em estado de choque. Ainda assim não desisti! Enquanto ainda estava no segundo ano, tive a oportunidade de aplicar a minha aprendizagem numa startup, a IOTECH, onde descobri outra paixão: a criação de conteúdos para redes sociais.</p>
+                      </div>
+                    </div>
+
+
+                  
+                </div>
+              </div>
+          </div>
+        </div>
+      </section>
+
+      <script type="module" src="../js/views/SideBarView.js"></script>
+      <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous">
+      </script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous">
+      </script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    </body>
+</html>

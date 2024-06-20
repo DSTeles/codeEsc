@@ -1,0 +1,143 @@
+@import url(../css/style.css);
+
+body{
+    background-color: #272228 !important;
+}
+
+
+/* Profile Card */
+.profile-section {
+    display: flex;
+    align-items: center;
+    width: 100%;
+}
+
+.profile-card .profile-img{
+    margin-left: -3rem;
+    width: 5.5rem; 
+    border-radius: 50%; 
+    height: 5.5rem;
+}
+
+.profile-card {
+    background-color: #fefffa;
+    padding: 0.5rem;
+    border-radius: 12rem;
+    width: 100%;
+    color: #272228;
+}
+
+.profile-card h2 {
+    margin-top: 0.9rem;
+    margin-left: -3rem;
+    font-weight: 700;
+}
+
+.profile-card p {
+    margin-left: -3rem;
+    font-weight: 200;
+    font-size: 1.3rem;
+    margin-top: -0.9rem;
+}
+
+
+/* Settings Card */
+.container-custom {
+    background-color: #fefffa;
+    border-radius: 3rem; 
+    padding: 2.5rem;
+}
+
+.card-custom {
+    border: none !important;
+    cursor: pointer;
+}
+
+.card-body{
+    background-color: #5b86cb;
+    border-radius: 115rem;
+    display: flex;
+    align-items: center;
+    margin-top: -0.5rem;
+}
+
+.card-custom .card-title {
+    color: #fefffa;
+    padding: 0.8rem 0;
+    margin-top: 0.2rem;
+    font-size: 1.3rem;
+}
+
+.card-info{
+    opacity: 0;
+    height: 0;
+}
+
+
+/* Account Settings Card */
+
+.card-info.active{ 
+    height: 100%;
+    opacity: 1;
+    width: 75%;
+    margin: 2rem 10rem;
+    display: flex;
+    flex-direction: column;
+}
+
+.input-group {
+    padding: 1.5rem;
+    display: flex;
+}
+
+.input-group .input-group-text {
+    border: none;
+    background-color:#fefffa;
+    font-weight: 700; 
+    margin-right: 3.2rem;
+    font-size: 1.2rem;
+    width: 10rem;
+}
+
+.input-group .form-control{
+    background-color: #5b86cb;
+    padding: 0; 
+
+}
+
+.card-custom .ok-button{
+    background-color: #272228;
+    color: #fefffa;
+    font-size: 1.5rem;
+    font-weight: 600;
+    border-radius: 2rem;
+    padding: 0.5rem 2.5rem;
+    margin-left: 25rem;
+    display: flex;
+}
+
+.card-custom .ok-button:hover{
+    background-color: #5b86cb;
+}
+
+/* Contact Support */
+.contact-support-form p{
+    font-size: 1.4rem;
+    font-weight: 600;
+}
+
+
+/* Share Our Page */
+.share-section p{
+    font-size: 1.8rem;
+    font-weight: 700;
+}
+
+.share-icons{
+    background-color: #272228;
+    padding: 3rem;
+    border-radius: 4rem;
+}
+
+
+

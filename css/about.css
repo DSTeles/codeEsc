@@ -1,0 +1,244 @@
+@import url(../css/style.css);
+
+body{
+    background-color: #fefffa!important;
+}
+
+/* Âbout TSIW Image */
+
+
+.about-tsiw-img{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    margin: 8rem 0;
+    
+}
+
+.about-tsiw-img img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+/* Our Home Card */
+.esmad-card {
+    background-color: #845ed5;
+    padding: 4rem 0;
+    color: #f8f9fa;
+    margin-bottom: 8rem; 
+    width: 100%;
+}
+
+/* ESMAD Info Section */
+.esmad-info {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.text-content {
+    flex: 1 1 50%; 
+    margin-left: 12rem;
+}
+
+.media-content {
+    flex: 1 1 50%; 
+    padding: 0 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-end; 
+    margin-right: 13rem;
+}
+
+.esmad-info-title {
+    font-weight: 700;
+    font-size: 5.3rem;
+}
+    
+
+.esmad-info-text {
+    font-size: 1.6rem;
+    margin-left: 0.2rem;
+}
+
+.esmad-img {
+    width: 40rem !important; 
+    height: 20rem !important; 
+    object-fit: cover; 
+    border-radius: 2rem;
+    margin-bottom: 1rem; 
+}
+
+.esmad-map-iframe {
+    max-width: 100%; 
+    height: 10rem; 
+    border-radius: 2rem;
+    margin-left: auto; 
+}
+
+/* The Course Emphasizes Section */
+.course-emphasizes {
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 1300px; 
+    margin-bottom: 10rem;
+    margin-top: 10rem;
+}
+
+.course-emphasizes h2 {
+    font-size: 2.2rem;
+    color: #743499;
+    font-weight: 800;
+    padding-bottom: 3rem; 
+    text-align: center; 
+}
+
+.course-emphasizes h4 {
+    font-size: 1.4rem;
+    color: #743499;
+    font-weight: 800;
+    padding-bottom: 2rem; 
+    text-align: center; 
+}
+
+.course-emphasizes .course-emphasizes-text {
+    font-size: 1.1rem;
+    color: #743499;
+    text-align: center;
+    font-weight: 600;
+}
+
+/* Professional Outlets Section */
+.pro-outlets {
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 1300px; 
+    margin-bottom: 10rem;
+}
+
+.pro-outlets .pro-outlets-title {
+    color: #ab2c48;
+    font-size: 2.2rem;
+    font-weight: 800;
+    margin-top: 1rem;
+    margin-bottom: 3rem; 
+    text-align: center; 
+}
+
+.pro-outlets .pro-outlets-text {
+    color: #ab2c48;
+    font-weight: 700;
+    font-size: 1.3rem;
+    margin-top: 2rem;
+    text-align: center; 
+   
+}
+
+.pro-outlets .row {
+    margin-bottom: 2rem;
+}
+
+.pro-outlets .row {
+    margin-bottom: 2rem;
+}
+
+/* Employability Questionnaires Section */
+.eq-container{
+    background-color: #5b86cb;
+    color: #f8f9fa;
+    flex-direction: column;
+    padding: 2.5rem 50rem;
+    margin-top: 6rem;
+    border-radius: 3rem;
+}
+
+.eq-title{
+    font-weight: 700;
+    font-size: 2.2rem;
+}
+
+.eq-subtitle{
+    margin-bottom: 3rem;
+    font-size: 1.4rem;
+    font-weight: 400;
+}
+
+.employability-text{
+    margin: 1.9rem 0 2rem 0;
+    font-weight: 700;
+    font-size: 1.3rem;
+}
+
+.relationship-text{
+    font-weight: 700;
+    margin: 0 0 2rem 0;
+    font-size: 1.3rem;
+}
+
+.eq-column{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.eq-container img{
+    width: 26rem; 
+    height: 22rem; 
+    border-radius: 6rem;
+    object-fit: cover; 
+}
+
+/* Partners Section */
+.partners-container .partners-title{
+    color: #845ed5; 
+    font-size: 2.2rem;
+    font-weight: 800;
+    margin-top: 10rem;
+    padding-left: 0;
+}
+    
+.partner-container .partners-image{ 
+    padding: 0;
+    margin-left: 2rem;
+}
+
+@media (max-width: 970px) {
+    .esmad-info {
+        flex-direction: column;
+    }
+
+    .text-content {
+        width: 70%;
+        margin-left: auto;
+        margin-right: auto;
+        font-size: 1.4rem;
+        text-align: center; 
+    }
+
+    .media-content {
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 2rem; 
+    }
+
+    .esmad-info-title {
+        font-size: 4rem; 
+    }
+
+    .esmad-info-text {
+        font-size: 1.5rem;
+    }
+
+    .esmad-map-iframe {
+        height: 20rem; 
+    }
+
+    .eq-container img{
+        margin-bottom: 6rem;
+    }
+
+}
